@@ -20,7 +20,7 @@ formEle.addEventListener('submit', (e) => {
     const inputValue = inputEle.value;
     
     messageOne.textContent = 'Loading...';
-    messageTwo.texContent = '';
+    messageTwo.textContent = '';
     
     fetch(`/weather?address=${inputValue}`).then((response) => {
         response.json().then((data) => {
