@@ -22,7 +22,7 @@ formEle.addEventListener('submit', (e) => {
     messageOne.textContent = 'Loading...';
     messageTwo.texContent = '';
     
-    fetch(`http://localhost:3000/weather?address=${inputValue}`).then((response) => {
+    fetch(`/weather?address=${inputValue}`).then((response) => {
         response.json().then((data) => {
             if (data.error) {
                 console.log(data.error);
